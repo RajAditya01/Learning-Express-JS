@@ -4,22 +4,27 @@
 // contact -wellcome to my contact page!
 // temp - wellcome to my temp page!
 
+
 const express = require("express");
-const {read} = require("fs");
-const {get} =require("fs");
 
 const app = express();
 
-app.get("/about",(req, res)=>{
-    app.res("wellcome to my about page!");
+app.get("/", (req, res) => {
+  res.send("Welcome to my Home page!");
 });
 
-app.get("/contact",(req, res)=>{
-    app.res("wellcome to my contact page!");
+app.get("/about", (req, res) => {
+  res.send("Welcome to my about page!");
 });
 
-app.get("/temp",(req,res)=>{
-    app.res("wellcome to my res page!")
-})
+app.get("/contact", (req, res) => {
+  res.send("Welcome to my contact page!");
+});
 
-app.listen()
+app.get("/temp", (req, res) => {
+  res.send("Welcome to my temp page!");
+});
+
+app.listen(5000, () => {
+  console.log("Listening on port 5000...");
+});
