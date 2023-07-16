@@ -29,6 +29,12 @@ app.get("/html", (req, res) => {
 });
 
 //jason data
+// The res object basically refers to the response that'll be sent out as part of this API call.
+
+// The res.send function sets the content type to text/Html which means that the client will now treat it as text. It then returns the response to the client.
+
+// The res.json function on the other handsets the content-type header to application/JSON so that the client treats the response string as a valid JSON object. It also then returns the response to the client.
+
 app.get("/json", (req, res) => {
     res.send({
         id:1,
