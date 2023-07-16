@@ -36,6 +36,13 @@ app.get("/json", (req, res) => {
     });
 });
 
+app.get("/json2", (req, res) => {
+    res.json({
+        id:1,
+        name: "aditya",
+    });
+});
+
 app.get("/about", (req, res) => {
     res.send("hello from the About Page..!");
 });
