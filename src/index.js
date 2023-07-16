@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 //relative absolut
-console.log(path.join(__dirname, ".."));
+const staticPath=path.join(__dirname, "../public");
 
 //builtin middleware
 app.use(express.static(staticPath));
