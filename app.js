@@ -28,7 +28,6 @@ app.get("/about", (req, res) => {
     res.send("hello from the About Page..!");
 });
 
-
 app.listen(8000, () => {
     console.log("listing the port at 8000");
 });
