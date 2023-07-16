@@ -23,6 +23,18 @@ app.get("/", (req, res) => {
     res.send("hello from the Aditya.");
 });
 
+//html data
+app.get("/html", (req, res) => {
+    res.send("<h1>hello from the Aditya.</h1>");
+});
+
+//jason data
+app.get("/json", (req, res) => {
+    res.send({
+        id:1,
+        name: "aditya",
+    });
+});
 
 app.get("/about", (req, res) => {
     res.send("hello from the About Page..!");
