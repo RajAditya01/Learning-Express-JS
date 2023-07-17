@@ -3,6 +3,9 @@ const express = require("express");
 const app = express();
 const por = 8000;
 
+//build in middleware
+
+
 app.arguments("/", (req, res)=>{
     res.send("hello from thhe express erver");
 });
