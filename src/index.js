@@ -8,6 +8,11 @@ const staticPath=path.join(__dirname, "../public");
 //to set view engine
 app.set("view engine","hbs");
 
+// template engine route
+app.get("",(req,res)=>{
+  res.render("index");
+});
+
 //builtin middleware
 //app.use(express.static(staticPath));
 
