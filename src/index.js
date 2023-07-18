@@ -1,14 +1,16 @@
 const path = require("path");
 const express = require("express");
 const app = express();
+const hbs=require("hbs");
 
 //relative absolut
 const staticPath=path.join(__dirname, "../public");
 
 //change the  name of view folder
-const templatePath=path.join(__dirname, "../templates");
+const templatePath =path.join(__dirname, "../templates");
+const partialsPath =path.join(__dirname, "../templates/partials");
 app.set("views", templatePath);
-
+hbs.registerPartials(partialsPath);
 
 
 //to set view engine
