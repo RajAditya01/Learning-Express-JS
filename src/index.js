@@ -9,7 +9,7 @@ const staticPath=path.join(__dirname, "../public");
 app.set("view engine","hbs");
 
 //builtin middleware
-app.use(express.static(staticPath));
+//app.use(express.static(staticPath));
 
 app.get("/", (req, res) => {
   res.send("Welcome to my Home page!");
