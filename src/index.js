@@ -6,8 +6,8 @@ const app = express();
 const staticPath=path.join(__dirname, "../public");
 
 //change the  name of view folder
-// const templatePath=path.join(__dirname, "../templates");
-// app.set("views", templatePath);
+const templatePath=path.join(__dirname, "../templates");
+app.set("views", templatePath);
 
 
 
