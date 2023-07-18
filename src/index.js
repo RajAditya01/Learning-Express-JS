@@ -6,7 +6,7 @@ const app = express();
 const staticPath=path.join(__dirname, "../public");
 
 //to set view engine
-app.
+app.set("view engine","hbs");
 
 //builtin middleware
 app.use(express.static(staticPath));
