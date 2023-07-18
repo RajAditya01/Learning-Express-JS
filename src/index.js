@@ -29,6 +29,11 @@ app.get("/", (req, res) => {
   res.send("Welcome to my Home page!");
 });
 
+//404 error
+app.get("*", (req, res) => {
+  res.render("404");
+});
+
 
 app.listen(5000, () => {
     console.log("Listening on port 5000...");
