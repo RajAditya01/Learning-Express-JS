@@ -5,8 +5,15 @@ const app = express();
 //relative absolut
 const staticPath=path.join(__dirname, "../public");
 
+//change the  name of view folder
+// const templatePath=path.join(__dirname, "../templates");
+// app.set("views", templatePath);
+
+
+
 //to set view engine
 app.set("view engine","hbs");
+
 
 // template engine route
 app.get("",(req,res)=>{
