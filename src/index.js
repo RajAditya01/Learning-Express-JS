@@ -5,6 +5,9 @@ const app = express();
 //relative absolut
 const staticPath=path.join(__dirname, "../public");
 
+//to set view engine
+app.
+
 //builtin middleware
 app.use(express.static(staticPath));
 
