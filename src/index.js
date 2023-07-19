@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 //404 error
 app.get("*", (req, res) => {
   res.render("404");
-});
+}); 
 
 
 app.listen(5000, () => {
