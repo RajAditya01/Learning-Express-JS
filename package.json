@@ -1,5 +1,5 @@
 {
-  "name": "learning-express-js",
+  "name": "learning-express",
   "version": "1.0.0",
   "description": "Learning Express Js",
   "main": "app.js",
@@ -11,5 +11,7 @@
   "dependencies": {
     "express": "^4.18.2",
     "hbs": "^4.2.0"
-  }
+  },
+  "devDependencies": {},
+  "keywords": []
 }
