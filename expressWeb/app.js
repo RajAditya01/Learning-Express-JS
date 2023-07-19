@@ -2,6 +2,12 @@ const express=require("express");
 const app =express();
 const port=process.env.PORT || 8000 ;
 
+//public static path
+console.log(Path.join(__dirname));
+app.use(express.static());
+
+
+//routhing
 app.get("", (req, res) => {
     res.send("hello from the Page..!");
 });
